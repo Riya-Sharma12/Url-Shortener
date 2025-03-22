@@ -11,7 +11,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
-import {UrlState} from "@/context";
+import {UrlState} from "@/Context";
 import useFetch from '@/hooks/useFetch';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { LinkIcon, LogOut } from 'lucide-react';

@@ -25,6 +25,12 @@ Frontend: React.js + Tailwind CSS + Shadcn UI
 Backend: Supabase
 State Management: React Context API
 
+##  🚀 How to Run the Project
+
+### 🛠️ 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/repository-name.git
+cd repository-name
 
 
 

@@ -44,9 +44,11 @@ Create a .env file and add your Supabase credentials:
 VITE_SUPABASE_URL=your-supabase-url  
 VITE_SUPABASE_ANON_KEY=your-supabase-anon-key  
 ```
-### 🔑 4.  Start the Development Server
+### 🚀 4.  Start the Development Server
 Create a .env file and add your Supabase credentials:
 ```bash
 npm run dev 
 ```
+## 🖥️ Screenshots  
+
 

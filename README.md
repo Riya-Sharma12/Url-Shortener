@@ -1,12 +1,28 @@
-# React + Vite
+A full-stack URL shortener built with React.js, styled using Tailwind CSS, and powered by Supabase as the backend for data storage and authentication. The project uses Shadcn UI for a sleek and responsive interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✅ Key Features:
 
-Currently, two official plugins are available:
+🔗 URL Shortening: Generates shortened URLs with a unique ID.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📊 Click Tracking: Tracks the number of clicks on each shortened link.
 
-## Expanding the ESLint configuration
+🔒 Authentication: User authentication and authorization using Supabase.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📈 Dashboard: Displays analytics with click counts and link details.
+
+🎯 UI Components: Utilizes Shadcn UI for elegant and reusable components.
+
+⚡ Responsive Design: Mobile-friendly interface with Tailwind CSS styling.
+
+
+📁 Tech Stack:
+
+Frontend: React.js + Tailwind CSS + Shadcn UI
+
+Backend: Supabase
+
+State Management: React Context API
+
+Deployment: 
+
+

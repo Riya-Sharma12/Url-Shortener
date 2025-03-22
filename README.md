@@ -34,9 +34,19 @@ State Management: React Context API
 git clone https://github.com/Riya-Sharma12/Url-Shortener.git
 cd Url-Shortener
 ```
-### 🛠️ 2. Install Dependencies
+### 📦 2. Install Dependencies
 ```bash
 npm install
 ```
-
+### 🔑 3.  Set Up Environment Variables
+Create a .env file and add your Supabase credentials:
+```bash
+VITE_SUPABASE_URL=your-supabase-url  
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key  
+```
+### 🔑 4.  Start the Development Server
+Create a .env file and add your Supabase credentials:
+```bash
+npm run dev 
+```
 

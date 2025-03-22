@@ -51,4 +51,41 @@ npm run dev
 ```
 ## 🖥️ Screenshots  
 
+<div align="center">
+  <figure>
+     <figcaption>🏠 Home Page with shortened URL display.</figcaption>
+    <br>
+     <br>
+    <img src="./screenshots/homePage.png" alt="Home Page" width="70%" style="border-radius: 10px;"/>
+  </figure>
+<br>
+ <br>
+  <figure>
+   <figcaption>🔐 Authentication Page.</figcaption>
+     <br>
+       <br>
+    <img src="./screenshots/authentication.png" alt="Auth" width="70%" style="border-radius: 10px;"/>
+  </figure>
+ <br>
+ <br>
+ 
+  <figure>
+       <figcaption>📊 Dashboard Page with all your links.</figcaption>
+     <br>
+    <br>
+    <img src="./screenshots/dashboard.png" alt="Dashboard" width="70%" style="border-radius: 10px;"/>
+  </figure>
+ 
+   <br>
+ <br>
+  <figure>
+          <figcaption>📈 Statistics Page with number of clicks , Location from where the clicks are done and the dype of device .</figcaption>
+       <br>
+ <br>
+    <img src="./screenshots/statsPage.png" alt="stats" width="70%" style="border-radius: 10px;"/>
+  </figure>
+
+</div>
+
+
 

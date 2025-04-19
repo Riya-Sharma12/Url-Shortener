@@ -50,39 +50,27 @@ import useFetch from '@/hooks/useFetch';
 import { BarLoader } from "react-spinners";
 
 const RedirectLinkPage = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
+  const {id} = useParams();
 
-  const { loading, data, fn } = useFetch(getLongUrl, id);
+  const {loading, data, fn} = useFetch(getLongUrl, id);
+
+  const {loading: loadingStats, fn: fnStats} = useFetch(storeClicks, {
+    id: data?.id,
+    originalUrl: data?.original_url,
+  });
 
   useEffect(() => {
     fn();
-  }, [id]);
+  }, []);
 
   useEffect(() => {
     if (!loading && data) {
-      // ✅ Perform redirection immediately
-      if (data?.original_url) {
-        console.log("Redirecting to:", data.original_url);
-        
-        // 🔥 Redirect immediately
-        window.location.href = data.original_url;  
-
-        // 🔥 Track the click in the background
-        storeClicks({
-          id: data.id,
-          original_url: data.original_url
-        }).catch((error) => {
-          console.error("Click tracking failed:", error);
-        });
-      } else {
-        console.log("Invalid URL. Redirecting to not-found page.");
-        navigate('/not-found');
-      }
+      fnStats();
     }
-  }, [loading, data]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading]);
 
-  if (loading) {
+  if (loading || loadingStats) {
     return (
       <>
         <BarLoader width={"100%"} color="#36d7b7" />

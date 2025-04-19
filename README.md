@@ -2,7 +2,7 @@
 
 **A full-stack URL shortener built with React.js, styled using Tailwind CSS, and powered by Supabase as the backend for data storage and authentication. The project uses Shadcn UI for a sleek and responsive interface.**
 
-🎮 Live Demo - 
+🎮 Live Demo - [Website Link](https://snipify.netlify.app/)
 
 # ✨ Key Features:
 

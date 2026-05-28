@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 import { UrlState } from "@/Context";
 import useFetch from "@/hooks/useFetch";
 import { getUrls } from "@/db/apiUrls";
-import { getClicksForUrl } from "@/db/apiClicks";
+import { getClicksForUrls } from "@/db/apiClicks";
 import Linkcard from "@/components/Linkcard";
 import CreateLink from "@/components/CreateLink";
 
@@ -31,7 +31,7 @@ const DashboardPage = () => {
   data: clicks,
   fn: fnClicks,
 } = useFetch(
-  getClicksForUrl,
+  getClicksForUrls,
   urls?.map((url) => url.id)
 );
 
@@ -78,7 +78,7 @@ const filteredUrls = urls?.filter((url) =>
     <div  className="relative">
      <Input
      type="text" placeholder="Fiter Links.."
-     onChange={()=>{
+     onChange={(e)=>{
          setSearchQuery(e.target.value);
      }}
      />

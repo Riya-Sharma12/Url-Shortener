@@ -89,7 +89,7 @@
 
 
 import React, { useEffect } from 'react';
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getLongUrl } from '@/db/apiUrls';
 import { storeClicks } from '@/db/apiClicks';
 import useFetch from '@/hooks/useFetch';
@@ -97,7 +97,6 @@ import { BarLoader } from "react-spinners";
 
 const RedirectLinkPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
 
   // Fetch the long URL from the database based on the shortcode
   const { loading, data, fn } = useFetch(getLongUrl, id);
@@ -114,9 +113,7 @@ const RedirectLinkPage = () => {
 
   useEffect(() => {
     if (!loading && data) {
-      fnStats(); // Store the click event if the data is fetched
-      // Redirect the user to the long URL
-      window.location.href = data.original_url;
+      fnStats(); // storeClicks records the click then redirects
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading, data]);
